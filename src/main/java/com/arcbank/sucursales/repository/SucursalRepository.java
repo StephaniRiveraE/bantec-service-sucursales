@@ -14,10 +14,14 @@ public interface SucursalRepository extends CrudRepository<Sucursal, String> {
 
     Optional<Sucursal> findByCodigoUnico(String codigoUnico);
 
-    // Métodos adaptados al modelo plano de Ubicacion para DynamoDB
-    List<Sucursal> findByUbicacionProvincia(String provincia);
+    // Sobreescritura para devolver List en lugar de Iterable
+    @Override
+    List<Sucursal> findAll();
 
-    List<Sucursal> findByUbicacionCiudad(String ciudad);
+    // Métodos anidados soportados por Spring Data
+    List<Sucursal> findByUbicacion_Provincia_Nombre(String nombre);
 
-    List<Sucursal> findByUbicacionSector(String sector);
+    List<Sucursal> findByUbicacion_Canton_Nombre(String nombre);
+
+    List<Sucursal> findByUbicacion_Parroquia_Nombre(String nombre);
 }
