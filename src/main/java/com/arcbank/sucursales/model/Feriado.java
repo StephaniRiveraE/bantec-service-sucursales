@@ -5,6 +5,7 @@ import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBTypeConverted;
 import com.arcbank.sucursales.converter.LocalDateConverter;
 import lombok.Getter;
 import lombok.Setter;
+import com.amazonaws.services.dynamodbv2.datamodeling.*;
 
 import java.time.LocalDate;
 import java.util.Objects;
@@ -12,12 +13,21 @@ import java.util.Objects;
 @DynamoDBDocument
 @Getter
 @Setter
+@DynamoDBDocument
 public class Feriado {
 
+<<<<<<< Updated upstream
     @DynamoDBTypeConverted(converter = LocalDateConverter.class)
+=======
+    @DynamoDBAttribute
+    @DynamoDBTypeConverted(converter = com.arcbank.sucursales.converter.LocalDateConverter.class)
+>>>>>>> Stashed changes
     private LocalDate fecha;
+    @DynamoDBAttribute
     private String descripcion;
+    @DynamoDBAttribute
     private String tipoFeriado;
+    @DynamoDBAttribute
     private Boolean activo;
 
     public Feriado() {

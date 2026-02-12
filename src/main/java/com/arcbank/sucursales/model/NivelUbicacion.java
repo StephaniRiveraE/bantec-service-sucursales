@@ -3,15 +3,19 @@ package com.arcbank.sucursales.model;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBDocument;
 import lombok.Getter;
 import lombok.Setter;
+import com.amazonaws.services.dynamodbv2.datamodeling.*;
 
 import java.util.Objects;
 
 @DynamoDBDocument
 @Getter
 @Setter
+@DynamoDBDocument
 public class NivelUbicacion {
 
+    @DynamoDBAttribute
     private String nombre;
+    @DynamoDBAttribute
     private String codigo;
 
     public NivelUbicacion() {

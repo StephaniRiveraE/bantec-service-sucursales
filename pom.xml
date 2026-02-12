@@ -31,16 +31,11 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
-		<!-- DynamoDB (Spring Data) -->
+		<!-- DynamoDB -->
 		<dependency>
 			<groupId>io.github.boostchicken</groupId>
 			<artifactId>spring-data-dynamodb</artifactId>
 			<version>5.2.5</version>
-		</dependency>
-		<dependency>
-			<groupId>com.amazonaws</groupId>
-			<artifactId>aws-java-sdk-dynamodb</artifactId>
-			<version>1.12.648</version>
 		</dependency>
 
 		<!-- Validaciones DTOs -->
