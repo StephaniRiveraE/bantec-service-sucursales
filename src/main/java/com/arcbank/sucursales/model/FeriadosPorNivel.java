@@ -1,10 +1,12 @@
 package com.arcbank.sucursales.model;
 
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBDocument;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.util.List;
 
+@DynamoDBDocument
 @Getter
 @Setter
 public class FeriadosPorNivel {
@@ -13,7 +15,8 @@ public class FeriadosPorNivel {
     private List<Feriado> canton;
     private List<Feriado> parroquia;
 
-    public FeriadosPorNivel() { }
+    public FeriadosPorNivel() {
+    }
 
     @Override
     public String toString() {
