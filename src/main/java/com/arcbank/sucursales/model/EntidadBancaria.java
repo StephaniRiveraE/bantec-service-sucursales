@@ -1,29 +1,26 @@
 package com.arcbank.sucursales.model;
 
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBDocument;
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBAttribute;
 import lombok.Getter;
 import lombok.Setter;
-import com.amazonaws.services.dynamodbv2.datamodeling.*;
+import java.util.Objects;
 
 @DynamoDBDocument
 @Getter
 @Setter
-@DynamoDBDocument
 public class EntidadBancaria {
-<<<<<<< Updated upstream
-=======
 
     @DynamoDBAttribute
->>>>>>> Stashed changes
     private String nombre;
+
     @DynamoDBAttribute
     private String ruc;
+
     @DynamoDBAttribute
     private String estado;
 
     public EntidadBancaria() {
-<<<<<<< Updated upstream
-=======
     }
 
     @Override
@@ -48,6 +45,5 @@ public class EntidadBancaria {
                 ", ruc='" + ruc + '\'' +
                 ", estado='" + estado + '\'' +
                 '}';
->>>>>>> Stashed changes
     }
 }

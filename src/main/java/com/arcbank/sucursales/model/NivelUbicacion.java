@@ -10,7 +10,6 @@ import java.util.Objects;
 @DynamoDBDocument
 @Getter
 @Setter
-@DynamoDBDocument
 public class NivelUbicacion {
 
     @DynamoDBAttribute

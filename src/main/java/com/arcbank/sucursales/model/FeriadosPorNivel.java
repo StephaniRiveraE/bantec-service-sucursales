@@ -10,7 +10,6 @@ import java.util.List;
 @DynamoDBDocument
 @Getter
 @Setter
-@DynamoDBDocument
 public class FeriadosPorNivel {
 
     @DynamoDBAttribute
