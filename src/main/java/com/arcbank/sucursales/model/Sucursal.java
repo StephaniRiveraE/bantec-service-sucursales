@@ -9,7 +9,7 @@ import org.springframework.data.annotation.Id;
 import java.time.LocalDate;
 import java.util.Objects;
 
-@DynamoDBTable(tableName = "sucursales")
+@DynamoDBTable(tableName = "switch-sucursales")
 @Getter
 @Setter
 public class Sucursal {
